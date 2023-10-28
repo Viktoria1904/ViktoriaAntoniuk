@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Formy</title>
+</head>
+<body>
+    <h1><strong>Форма заявки на работу в зоопарке</strong></h1>
+    <h3><var>Пожалуйста, заполните формую Обязательные поля помечены *</var></h3>
+
+        <form action="fe.it-academy.by/TestForm.php" method="pos" >
+            <fieldset><legend> Контактная информация </legend>
+            <p>Имя * <input type="text"  name="Im1">   </p>                
+            <p> Телефон <input type="text"  name="Im2">      </p>               
+            <p>e-mail *<input type="email" name="email"autofocus> </p>                     
+           </fieldset>
+
+           <fieldset><legend>Персональная информация</legend>
+                <p>Возраст * <input type="text"  name="Im1">   </p>
+                <p>Пол
+                    <select name="list" id="list">
+                        <option value="1">Женщина</option>
+                        <option value="2">Мужчина</option>
+                    </select>  
+                </p> 
+                <p>Перечислите личные качества
+                    <textarea name="text_area" lang="ru"> Форма отправки </textarea>   
+                </p>
+            </fieldset>
+
+            <fieldset><legend>Выберите ваших любимых животных</legend>
+                <tr>
+                    <td> <input type="checkbox" name="check1">Зебра</td>
+                    <td> <input type="checkbox" name="check2">Кошак</td>
+                    <td> <input type="checkbox" name="check3">Анаконда</td>
+                    <td> <input type="checkbox" name="check4">Человек</td>
+                </tr>
+                <tr>
+                    <td> <input type="checkbox" name="check5">Слон</td>
+                    <td> <input type="checkbox" name="check6">Антилопа</td>
+                    <td> <input type="checkbox" name="check7">Голубь</td>
+                    <td> <input type="checkbox" name="check8">Краб</td>
+                </tr>
+            </fieldset>
+<br>
+            <input type="submit" value="Отправить"> 
+        </form> 
+
+</body>
+</html>
