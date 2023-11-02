@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <title>02-css-3</title>
+   <style>
+        .menu{
+            width: 15em;
+            background: rgb(7, 236, 121);
+            float: left;
+        }
+        .wrap{
+            margin-left: 15em;
+            padding-top: 0.1px;
+
+        }
+        .statja{
+            background: rgb(11, 90, 56);            
+            padding: 10px;
+            margin-bottom: 2em;
+        }
+        .clear{
+            clear: both;
+        }
+        .footer{
+            background: rgb(98, 202, 167);
+        }
+        .mail{
+            float:right;
+        }
+   </style>
+</head>
+<body>
+    <div class="menu">
+        <ul><strong>Блок навигации</strong>
+            <li>Ширина 15ем</li>
+            <li>Должен присутствовать цвет фона</li>
+            <li>Располагается слева</li>
+            <li>Блок наполните контентом достаточным, чтобы по высоте он начал захватывать вторую статью, как показано в данном примере</li>
+        </ul>
+    </div>
+    <div class="wrap">
+        <div class="statja">
+            <h3>Статья 1</h3>
+            <br>
+            Размер блока:<br>
+            Занимает всю доступную ширину<br>
+            должен присутствовать цвет фона<br>
+            Во всех""стастьях" сделайте отступ справа т соседей 2ем
+        </div>
+        <div class="statja">
+            <h3>Статья 2</h3>
+            <br>
+            Размер блока:<br>
+            Занимает всю доступную ширину<br>
+            должен присутствовать цвет фона<br>
+            Во всех""стастьях" сделайте отступ справа т соседей 2ем. Картинка вставлена при помощи тега, плавание организовано по правому краю внутри данной статьи для этой картинки<br>
+            
+            <div class="mail">
+                <img src="mail.jpg">                
+            </div>
+            <div class="clear"></div>
+        </div>   
+       
+        <div class="clear"></div>
+    </div>
+    <div class="footer">
+    нижний блок, подвал. Занимает всю доступную ширину. высота определяется помещенным внутрь контентом
+    </div>
+
+</body>
+</html>

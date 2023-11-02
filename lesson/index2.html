@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
       <title>maket</title>
 <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     .header {
         background: #cfe2f3;
         height: 150px;
@@ -55,6 +60,20 @@
         background: #cfe2f3;
         height: 150px; 
     }
+    .content-left{
+        width: 430px;
+        height: 430px;
+        background:#cfe2f3;
+        float: left;
+        margin: 30px;
+    }
+    .content-right{
+        width: 430px;
+        height: 430px;
+        background:#cfe2f3;
+        float: right;
+        margin: 30px;
+    }
 </style>
 
 </head>
@@ -78,7 +97,11 @@
         <div class="banner">
             <div class="banner_item"></div>
         </div>
-        <div class="content"></div>
+        <div class="content">
+            <div class="content-left"></div>
+            <div class="content-right"></div>
+            <div class="clear"></div>
+        </div>
        
         <div class="clear"></div>
 
