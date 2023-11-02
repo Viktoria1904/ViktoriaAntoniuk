@@ -76,7 +76,7 @@
                   
                 <p><input type="text" name="Im4"required>*
                     Имя </p>
-                   <p><input type="email" name="email"required>*
+                   <p><input type="email" name="email"pattern="([A-zА-я])+([0-9\-_\+\.])*([A-zА-я0-9\-_\+\.])*@([A-zА-я])+([0-9\-_\+\.])*([A-zА-я0-9\-_\+\.])*[\.]([A-zА-я])+"required>*
                     e-mail </p>
                     <textarea name="text_area" lang="ru"> Форма отправки </textarea>
                 <br>  
@@ -124,7 +124,7 @@
     <td><h3><strong>Валидация данных Html5</strong></h3>
       <form action="fe.it-academy.by/TestForm.php" method="pos">
           <fieldset><legend> Cтрока поиска</legend>
-                <input type="text" name="Im6" pattern="[А-Яа-яЁё]" placeholder="Только русские буквы"> <br>
+                <input type="text" name="Im6" pattern="[А-Яа-яЁё]+$" placeholder="Только русские буквы"> <br>
                 <var>Телефонный номер в формате <br> +ХХХ-ХХ-ХХХХХХХ, где Х-любое число</var>
                 <input type="tel" name="tel" pattern="\+{1}[0-9]{3}-[0-9]{2}-[0-9]{7}">
                 <br>

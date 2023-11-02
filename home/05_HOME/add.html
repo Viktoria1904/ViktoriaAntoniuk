@@ -10,14 +10,14 @@
     
         <form action="fe.it-academy.by/TestForm.php" method="pos" >
             <fieldset><legend> Личные данные </legend>
-                 <input type="text"  name="Im1" pattern="[А-Яа-яЁё]"placeholder="Фамилия" required autofocus maxlength="25" >               
+                 <input type="text"  name="Im1" pattern="[А-Яа-яЁё]+$"placeholder="Фамилия" required autofocus maxlength="25" >               
                  <br>
-                 <input type="text"  name="Im2" pattern="[А-Яа-яЁё]" placeholder="Имя" required  maxlength="20">           
+                 <input type="text"  name="Im2" pattern="[А-Яа-яЁё]+$" placeholder="Имя" required  maxlength="20">           
                  <br>
-                 <input type="text"  name="Im3"pattern="[А-Яа-яЁё]" placeholder="Отчество" required  maxlength="24">                  
+                 <input type="text"  name="Im3"pattern="[А-Яа-яЁё]+$" placeholder="Отчество" required  maxlength="24">                  
                 <fieldset><legend>Паспортные данные</legend>
-                    <input type="text"  name="Im4"placeholder="Серия"pattern="[А-Яа-яЁё]\S" required>
-                    <input type="text"  name="Im5"placeholder="Номер паспорта"pattern="[0-9]{7}" required>
+                    <input type="text"  name="Im4"placeholder="Серия"pattern="[А-Z]{2}" required maxlength="2">
+                    <input type="text"  name="Im5"placeholder="Номер паспорта"pattern="[0-9]{7}" required maxlength="7">
                     </fieldset>  
                 <fieldset><legend>Дата рождения</legend>
                     <input type="text"  name="Im6"pattern="[0-9]{4}"placeholder="Год">
@@ -85,14 +85,14 @@
                 </fieldset>
         </fieldset>   
 <fieldset><legend>Данные для входаи восстановления пароля</legend>
-    <input type="text"  name="Im7" pattern="[A-Z][[a-z]{5,}\S"placeholder="Логин" required autofocus maxlength="20" >               
+    <input type="text"  name="Im7" pattern="[A-Za-z]{5,}"placeholder="Логин" required maxlength="20" >               
     <br>
-    <input type="password"  name="password" pattern="[A-Za-z]{5,}\S"placeholder="Пароль" required autofocus maxlength="20" >               
+    <input type="password"  name="password" pattern="[A-Za-z]{10,}"placeholder="Пароль" required maxlength="20" autocomplete=”off”>               
     <br>
 </fieldset>
 
 <fieldset><legend>Координаты</legend></fieldset>
-    <input type="email"  name="email" pattern="[А-Яа-яЁё]\S"placeholder="введите адрес почты" required autofocus maxlength="20" >               
+    <input type="email"  name="email" pattern="([A-zА-я])+([0-9\-_\+\.])*([A-zА-я0-9\-_\+\.])*@([A-zА-я])+([0-9\-_\+\.])*([A-zА-я0-9\-_\+\.])*[\.]([A-zА-я])+"placeholder="введите адрес почты" required autofocus maxlength="20" >               
     <br>
     <input type="url"  name="website" required pattern="https?://.+"placeholder="введите адрес сайта" >               
     <br>
