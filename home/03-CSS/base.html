@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03-css</title>
+    <style>
+       div.MenuLevel1 { width: 350px; font-size: 40pt;display: inline-block;float:left}
+        div.MenuLevel1 > div { background-color: rgb(108, 170, 70); border: solid rgb(10, 92, 64) 1px;
+                                 border-radius: 10px; position: relative; cursor: pointer
+                                  }
+        div.MenuLevel2 { width: 250px; display: none }
+        /* div.MenuLevel2 > div { background-color: rgb(85, 152, 175); border: solid rgb(19, 40, 148) 1px; 
+                                cursor: pointer }
+        div.MenuLevel1 > div:hover div.MenuLevel2 { display: block; position: absolute; left: 80%; top: 90%; 
+                                                    z-index: 1 } */
+       
+    /* @media all and (max-width: 450 px){  
+       div.MenuLevel1 { width: 350px; font-size: 40pt;}
+        div.MenuLevel1 > div { background-color: yellow; border: solid blue 1px; position: relative; cursor: pointer }
+        div.MenuLevel2 { width: 250px; display: none }
+        div.MenuLevel2 > div { background-color: cyan; border: solid blue 1px; cursor: pointer }
+        div.MenuLevel1 > div:hover div.MenuLevel2 { display: block; position: absolute; left: 80%; top: 90%; z-index: 1 }
+    } */
+     </style>
+</head>
+<body>
+    <div class='MenuLevel1'>
+        <div>Понедельник</div>
+        <div>Вторник</div>
+        <div> Среда
+                    <div class='MenuLevel2'>
+                                <div>Завтрак</div>
+                                <div>Обед</div>
+                                <div>Ужин</div>
+                     </div>
+        </div>
+    
+        <div>Четверг</div>
+        <div>Пятница</div>
+    
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+        }
+.menu{
+    width: 280px;
+    background-color:aqua;
+    font-size: 32pt;
+    border-style:solid; border-color: blue; border-radius: 10px; border-width: 3px;
+    display: inline-block;
+}
+
+.menu2{
+    width: 200px;   
+    position: absolute; 
+    display: none; 
+    
+    
+}
+
+.menu:hover div{
+    display: block; 
+    font-size: 32pt;
+    border-style:solid; border-color: rgb(6, 57, 21); border-radius: 10px; border-width: 3px;
+    background-color:rgb(93, 231, 113);
+    position: absolute;  z-index: 1
+}
+
+@media all and (max-width: 300 px){
+    div.menu { width: 350px; font-size: 40pt;}
+        div.menu > div { background-color: yellow; border: solid blue 1px; position: relative; cursor: pointer }
+        div.menu2{ width: 250px; display: none }
+        div.menu2 > div { background-color: cyan; border: solid blue 1px; cursor: pointer }
+        div.menu > div:hover div.menu2 { display: block; position: absolute; left: 80%; top: 90%; z-index: 1 }
+}
+    </style>
+</head>
+<body>
+    
+<div class="menu">Понедельник</div>
+<div class="menu">Вторник</div>
+<div class="menu">Среда
+    <div class="menu2">Завтрак</div>
+    <div class="menu2">Обед</div>
+    <div class="menu2">Ужин</div>
+</div>
+<div class="menu">Четверг</div>
+<div class="menu">Пятница</div>
+<div class="menu">Суббота</div>
+
+
+</body>
+</html>
