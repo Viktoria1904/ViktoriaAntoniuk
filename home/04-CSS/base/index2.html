@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04-CSS-2</title>
+    <style>
+        table{
+            border-collapse: collapse; 
+            border: 2px solid white; 
+        }
+        td{
+            border-collapse: collapse; 
+            border: 2px dotted green; 
+        }
+       
+       td:first-child{
+        font-weight: bolder;
+       }
+        tr:nth-child(odd){
+           background:rgb(139, 213, 139);
+        }
+        tr:hover{
+            color:blue;
+        }
+        tr:first-child{
+           background:rgb(23, 96, 23);
+           border-collapse: collapse; 
+            border: 2px solid white; 
+           font-weight: bolder;
+        }
+        tr:last-child{
+           background: white;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>ФИО</td>
+            <td>пол</td>
+            <td>должность</td>
+            <td>дата рож.</td>
+            <td>Данные 01</td>
+            <td>Данные 02</td>
+        </tr>
+        <tr>
+            <td>Иванов Иван Иванович</td>
+            <td>М</td>
+            <td>начальник</td>
+            <td>01.01.1960</td>
+            <td>4567</td>
+            <td>3453</td>
+        </tr>
+        <tr>
+            <td>Петрова Илона Петровна</td>
+            <td>Ж</td>
+            <td>секретарь</td>
+            <td>01.01.1989</td>
+            <td>98795</td>
+            <td>46532</td>
+        </tr>
+        <tr>
+            <td>Сидоров Илья Игоревич</td>
+            <td>М</td>
+            <td>бухгалтер</td>
+            <td>01.01.1979</td>
+            <td>743434</td>
+            <td>987979</td>
+        </tr>
+        <tr>
+            <td>Пупин Федор Федорович</td>
+            <td>М</td>
+            <td>водитель</td>
+            <td>01.01.1963</td>
+            <td>74329434</td>
+            <td>9232379</td>
+        </tr>
+        <tr>
+            <td>Крупин Сергей Иванович</td>
+            <td>М</td>
+            <td>водитель 2</td>
+            <td>01.01.1983</td>
+            <td>3234534</td>
+            <td>923123379</td>
+        </tr>
+        <th colspan="6">ДАННЫЕ О СОТРУДНИКАХ </th>
+    </table>
+
+</body>
+</html>
